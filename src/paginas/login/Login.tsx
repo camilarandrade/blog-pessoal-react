@@ -54,7 +54,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="senha">Senha</label>
+            <label htmlFor="senha ">Senha</label>
             <input
               type="password"
               id="senha"
