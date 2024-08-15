@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
+import { AuthContext } from '../../contexts/AuthContext'
 
 function Footer() {
- 
-  
+  const { usuario, handleLogout } = useContext(AuthContext)
+  let footerComponent
 
-  return (
-    <>
+  let data = new Date().getFullYear()
+
+  if (usuario.token !== '') {
+    footerComponent = (
+      <>
         <div className="w-full bg-pink-200 text-gray-700 flex justify-center p-4">
           <div className="container flex flex-col items-center py-4">
             <p className='text-xl font-bold'>Blog pessoal Camila Andrade </p>
@@ -19,7 +23,14 @@ function Footer() {
           </div>
         </div>
       </>
+    )
+  }
+
+  return (
+    <>
+      {footerComponent}
+    </>
   )
 }
 
-export default Footer
+  export default Footer
