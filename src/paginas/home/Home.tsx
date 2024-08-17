@@ -10,13 +10,13 @@ function Home() {
       <div className="flex justify-center">
         <div className='container grid grid-cols-2 text-gray-700'>
           <div className="flex flex-col gap-4 items-center justify-center py-4">
-            <h2 className='text-5xl font-bold'>Seja bem vinde!</h2>
-            <p className='text-xl'>Expresso aqui meus pensamentos e opniões</p>
+            <h2 className='text-5xl font-abril text-custom-gray'>bem vinde!</h2>
+            <p className='text-xl font-jura'>Esse é um espaço seguro para expressar seus pensamentos e opniões</p>
 
             <div className="flex justify-around gap-4">
 
             <ModalPostagem />
-            <button className='rounded bg-white text-blue-800 py-2 px-4'>Ver postagens</button>
+            <button className='font-jura rounded-33px bg-custom-pink text-white py-2 px-4 hover:bg-custom-purple'>Ver postagens</button>
             </div>
           </div>
 

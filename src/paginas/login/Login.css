@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Actor&display=swap');
+
 .fundoLogin {
     background-image: url(../../assets/loginn.jpg);
     background-repeat: no-repeat;
@@ -9,3 +11,4 @@
     height: 500px;
     display: block;
   }
+

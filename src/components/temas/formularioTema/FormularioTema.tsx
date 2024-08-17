@@ -98,24 +98,24 @@ function FormularioTema() {
 
   return (
     <div className="container flex flex-col items-center justify-center mx-auto">
-      <h1 className="text-4xl text-center my-8">
+      <h1 className="font- text-custom-gray text-4xl text-center my-8">
         {id === undefined ? 'Cadastre um novo tema' : 'Editar tema'}
       </h1>
 
       <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovoTema}>
         <div className="flex flex-col gap-2">
-          <label htmlFor="descricao">Descrição do tema</label>
+          <label htmlFor="descricao" className="font-jura">Descrição do tema</label>
           <input
             type="text"
             placeholder="Descrição"
             name='descricao'
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-custom-purple rounded-33px p-2"
             value={tema.descricao}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
         </div>
         <button
-          className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block"
+          className="rounded-33px text-slate-100 bg-custom-lightgreen hover:bg-custom-darkgreen w-1/2 py-2 mx-auto block"
           type="submit"
         >
           {id === undefined ? 'Cadastrar' : 'Editar'}
