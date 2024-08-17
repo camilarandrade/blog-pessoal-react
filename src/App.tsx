@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './paginas/login/Login';
 import Cadastro from './paginas/cadastro/Cadastro';
 import Home from './paginas/home/Home';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import { AuthProvider } from './contexts/AuthContext';
 import ListaTemas from './components/temas/listaTemas/ListaTemas';
 import FormularioTema from './components/temas/formularioTema/FormularioTema';
@@ -16,11 +18,12 @@ import ListaPostagens from './components/postagens/listaPostagens/ListaPostagem'
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import Perfil from './paginas/perfil/Perfil';
 
-
+ 
 function App() {
   return (
     <>
     <AuthProvider>
+    <ToastContainer />
         <BrowserRouter>
           <Navbar />
           <div className='min-h-[80vh]'>
