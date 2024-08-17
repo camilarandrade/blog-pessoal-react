@@ -90,7 +90,7 @@ function Cadastro() {
               type="text"
               id="usuario"
               name="usuario"
-              placeholder="Usuario"
+              placeholder="E-mail"
               className="border-2 rounded p-2 border-custom-purple rounded-33px"
               value={usuario.usuario} 
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
